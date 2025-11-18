@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- ================== HEADER / NAVBAR ================== -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Creative Hub Logo">
+    </div>
+
+    <div class="site-title">Creative Hub</div>
+
+    <div class="nav-buttons">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-toggle">&#9776;</div>
+  </header>
+
+  <!-- ================== HOME SECTION ================== -->
+  <section id="home" class="home-section">
+    <h1>Welcome to Creative Hub</h1>
+    <p class="creative-text">
+      Explore modern design, creativity, and futuristic ideas.
+      A simple, elegant, professional website to showcase your work.
+    </p>
+    <div class="cta-buttons">
+      <a href="#projects">See Projects</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+  </section>
+
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-image-container">
+      <img src="mypic.jpg" alt="About Me" class="about-image">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I create modern, interactive websites and applications using HTML, CSS, JavaScript, PHP, and Java, while also developing AI projects, animations, and elegant UI/UX designs to bring creative ideas to life.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- ================== PROJECTS SECTION ================== -->
+  <section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <img src="project1.jpg" alt="Project 1">
+        <div class="card-text">
+          <h3>Project One</h3>
+          <p>A creative web development project using modern design.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="project2.jpg" alt="Project 2">
+        <div class="card-text">
+          <h3>Project Two</h3>
+          <p>Interactive animations and AI-driven tools displayed with style.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ui.jpg" alt="Project 3">
+        <div class="card-text">
+          <h3>Project Three</h3>
+          <p>Portfolio websites and UI/UX designs with futuristic colors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== CONTACT SECTION ================== -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+<footer>
+  <p>© 2025 Ammara Majeed | All Rights Reserved</p>
+  <div class="social-icons">
+    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+</footer>
+
+
+  <!-- ================== BACK TO TOP BUTTON ================== -->
+  <button id="backToTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">&#8679;</button>
+
+  <!-- ================== SCRIPTS ================== -->
+  <script>
+    // Animate sections on scroll
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      const scrollPos = window.scrollY + window.innerHeight - 100;
+      sections.forEach(sec => {
+        if(scrollPos > sec.offsetTop) sec.classList.add('visible');
+      });
+    });
+
+    // Back to top button
+    const backBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 400) backBtn.style.display = 'block';
+      else backBtn.style.display = 'none';
+    });
+
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navButtons = document.querySelector('.nav-buttons');
+    toggle.addEventListener('click', () => {
+      navButtons.style.display = navButtons.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+
+</body>
+</html>
