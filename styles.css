@@ -1,0 +1,336 @@
+/* ---------- GLOBAL ---------- */
+/* Full-page background image */
+body {
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;   /* make it cover the entire screen */
+  color: #fff;              /* make text readable */
+  font-family: 'Cinzel', serif;
+}
+
+
+/* ---------- HEADER / NAVBAR ---------- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: black; /* dark maroon header */
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo left */
+header .logo img {
+  width: 200px;
+  height: auto;
+}
+
+/* Site title center */
+header .site-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* Nav buttons right */
+header .nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+header .nav-buttons a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 25px;
+  background-color: #b22222; /* slightly lighter maroon button */
+  border-radius: 25px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+header .nav-buttons a:hover {
+  background-color: #a00000;
+}
+
+/* Mobile toggle */
+header .nav-toggle {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+  background-color: black; /* light grey background */
+  color: white; /* dark text for contrast */
+  width: 85%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 60px 20px;
+  border-radius: 15px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- HOME SECTION ---------- */
+.home-section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.home-section .creative-text {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 25px;
+  line-height: 1.6;
+}
+
+/* CTA Buttons */
+.home-section .cta-buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 14px 35px;
+  margin: 0 10px;
+  border-radius: 25px;
+  background-color: #800000;
+  font-weight: 700;
+  transition: 0.3s, box-shadow 0.3s;
+}
+
+.home-section .cta-buttons a:hover {
+  background-color: #a00000;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(128,0,0,0.7);
+}
+
+//* Make image fit section nicely */
+.about-image {
+  width: 50%;         /* full width of section */
+  max-height: 200px;   /* limits height */
+  object-fit: cover;   /* crops image nicely without distortion */
+  border-radius: 15px; /* optional rounded corners */
+  display: block;
+  margin-bottom: 20px; /* space between image and text */
+}
+
+/* About text styling */
+/* About section layout */
+.about-section {
+  background: black; /* or your theme color */
+  padding: 60px 20px;
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Container to keep image and text aligned */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;       /* responsive for smaller screens */
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Image container to limit size */
+.about-image-container {
+  flex: 1 1 400px;      /* min 400px, flexible width */
+  max-width: 500px;     /* prevents image from being too big */
+}
+
+/* Image styling */
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  object-fit: cover;    /* keeps image proportional */
+}
+
+/* Text styling */
+.about-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+  text-align: left;     /* or center if you prefer */
+  color: #fff;
+}
+
+
+/* ---------- PROJECTS SECTION ---------- */
+.projects-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: #e0e0e0; /* slightly lighter grey card */
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 15px;
+}
+
+.card-text h3 {
+  color: #800000; /* maroon heading */
+  margin-bottom: 10px;
+}
+
+.card-text p {
+  color: #111;
+  font-size: 14px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* ---------- CONTACT SECTION ---------- */
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid #800000;
+  background-color: #fff; /* input fields white */
+  color: #111;
+  font-size: 16px;
+  font-family: 'Cinzel', serif;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #a00000;
+  box-shadow: 0 0 8px rgba(128,0,0,0.4);
+}
+
+.contact-form button {
+  padding: 14px 35px;
+  border: none;
+  border-radius: 25px;
+  background-color: #800000;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s, box-shadow 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #a00000;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(128,0,0,0.7);
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+footer .social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: #b22222; /* dark maroon */
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+footer .social-icons a:hover {
+  background-color: #800000; /* slightly darker maroon on hover */
+  transform: scale(1.2);
+  color: #fff;
+}
+
+
+/* ---------- BACK TO TOP ---------- */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #800000;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #a00000;
+  transform: scale(1.2);
+}
+
+/* ---------- ANIMATIONS ---------- */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width: 900px){
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  header .nav-buttons { display: none; flex-direction: column; position: absolute; top: 60px; right: 20px; background-color: #800000; padding: 10px; border-radius: 10px; }
+  header .nav-toggle { display: block; }
+}
+
+@media(max-width: 600px){
+  .projects-grid { grid-template-columns: 1fr; }
+}
