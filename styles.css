@@ -8,6 +8,12 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
+.home-logo {
+  width: 180px;      /* change size if needed */
+  border-radius: 12px;
+  display: block;
+  margin: 20px auto; /* center */
+}
 
 /* ---------- HEADER / NAVBAR ---------- */
 header {
@@ -306,3 +312,4 @@ footer .social-icons a:hover {
   .about-text { text-align: center; }
   .about-container { flex-direction: column; gap: 20px; }
 }
+
