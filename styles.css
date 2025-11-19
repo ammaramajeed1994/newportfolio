@@ -16,77 +16,59 @@ body {
 }
 
 /* ---------- HEADER / NAVBAR ---------- */
-header {
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  padding: 15px 40px;
+  background: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
-  background-color: black;
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
-header .logo img {
-  width: 200px;
-  height: auto;
+/* LOGO */
+.logo img {
+  height: 50px;
 }
 
-header .site-title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 28px;
-  font-weight: 700;
-  color: #fff;
-  white-space: nowrap;
-}
-
-header .nav-buttons {
+/* MENU CENTER */
+.nav-links {
+  list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center; /* center menu */
 }
 
-header .nav-buttons a {
-  color: #fff;
+.nav-links li a {
   text-decoration: none;
-  padding: 12px 25px;
-  background-color: #b22222;
-  border-radius: 25px;
-  font-weight: 700;
-  transition: 0.3s;
-}
-
-header .nav-buttons a:hover {
-  background-color: #a00000;
-}
-
-header .nav-toggle {
-  display: none;
-  font-size: 28px;
-  color: #fff;
-  cursor: pointer;
-}
-
-/* ---------- SECTIONS ---------- */
-section {
-  background-color: black;
   color: white;
-  width: 85%;
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 60px 20px;
-  border-radius: 15px;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: 1s ease-out;
+  font-size: 17px;
+  font-weight: 500;
 }
 
-section.visible {
-  opacity: 1;
-  transform: translateY(0);
+/* CONTACT BUTTON RIGHT */
+.contact-btn {
+  background: #ff6f00;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact-btn:hover {
+  background: #ff8800;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* hide menu, we can add mobile menu later */
+  }
 }
 
 /* ---------- HOME SECTION ---------- */
@@ -312,4 +294,5 @@ footer .social-icons a:hover {
   .about-text { text-align: center; }
   .about-container { flex-direction: column; gap: 20px; }
 }
+
 
