@@ -1,234 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AmmaraMadniStudio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AM Studio — Web, Mobile, Game & Animation</title>
+  <meta name="description" content="AM Studio — Web, Mobile, Game & Animation — All in One Studio" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Theme color for mobile -->
+  <meta name="theme-color" content="#0957ff">
 </head>
 <body>
 
-  <!-- ================== HEADER / NAVBAR ================== -->
-<nav class="navbar">
-  <div class="logo">
-    <img src="logo.png" alt="Logo">
-  </div>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="#home" aria-label="AM Studio home">
+        <!-- Inline minimal modern SVG logo -->
+        <svg width="56" height="56" viewBox="0 0 100 100" aria-hidden="true" role="img">
+          <defs>
+            <linearGradient id="g1" x1="0%" x2="100%">
+              <stop offset="0" stop-color="#0957FF"/>
+              <stop offset="1" stop-color="#6D5CFF"/>
+            </linearGradient>
+          </defs>
+          <rect rx="18" width="100" height="100" fill="url(#g1)"></rect>
+          <g transform="translate(18,20)" fill="#fff" stroke="none">
+            <!-- A shape -->
+            <path d="M6 60 L24 6 L42 60 L34 60 L26 36 L14 36 L6 60 Z"></path>
+            <!-- M shape -->
+            <path d="M52 60 L52 10 L66 34 L78 10 L78 60 L70 60 L70 18 L66 26 L58 18 L58 60 Z"></path>
+          </g>
+        </svg>
+        <div class="brand">
+          <span class="brand-name">AM Studio</span>
+          <span class="tagline">Web, Mobile, Game & Animation — All in One Studio</span>
+        </div>
+      </a>
 
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-  </ul>
-
-  <a href="#contact" class="contact-btn">Contact</a>
-</nav>
-
-
-  <!-- ================== HOME SECTION ================== -->
-  <div class="home">
-  <img src="images/logo.png" alt="Ammara Madni Studio Logo" class="home-logo">
-  <h1>Welcome to Ammara Madni Studio</h1>
-</div>
-
-  <section id="home" class="home-section">
-    <h1>Welcome to AmmaraMadni Studio</h1>
-    <p class="creative-text">
-      Explore modern design, creativity, and futuristic ideas.
-      A simple, elegant, professional website to showcase your work.
-    </p>
-    <div class="cta-buttons">
-      <a href="#projects">See Projects</a>
-      <a href="#contact">Contact Me</a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn-outline">Contact</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-<section id="about" class="about-section">
-  <div class="about-container">
-    <div class="about-image-container">
-      <img src="mypic.jpg" alt="About Me" class="about-image">
-    </div>
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        I create modern, interactive websites and applications using HTML, CSS, JavaScript, PHP, and Java, while also developing AI projects, animations, and elegant UI/UX designs to bring creative ideas to life.
-      </p>
-    </div>
-  </div>
-</section>
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>We build beautiful web, mobile, games & animations.</h1>
+        <p class="lead">From concept to launch — clean UI, performant code, and playful animations that users love.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary">Start a Project</a>
+          <a href="#work" class="btn-ghost">See Portfolio</a>
+        </div>
 
-  <!-- ================== PROJECTS SECTION ================== -->
-  <section id="projects" class="projects-section">
-    <h2>My Projects</h2>
-    <div class="projects-grid">
-      <div class="card">
-        <img src="project1.png" alt="Project 1">
-        <div class="card-text">
-          <h3>Project One</h3>
-          <p>A creative web development project using modern design.</p>
+        <ul class="quick-list">
+          <li>Web apps & Landing pages</li>
+          <li>Mobile apps (iOS & Android)</li>
+          <li>2D/3D Game prototypes</li>
+          <li>Animations & Cartoon shorts</li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <!-- simple device mockup with SVG / gradient -->
+        <div class="mockup">
+          <svg viewBox="0 0 320 540" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <defs>
+              <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#0957FF"/>
+                <stop offset="1" stop-color="#6D5CFF"/>
+              </linearGradient>
+            </defs>
+            <rect x="10" y="10" rx="28" ry="28" width="300" height="520" fill="#0f1724" />
+            <rect x="24" y="36" rx="14" ry="14" width="272" height="440" fill="url(#mg)"/>
+            <g transform="translate(40,64)" fill="#fff" opacity="0.95">
+              <rect width="192" height="56" rx="10"></rect>
+              <rect y="90" width="192" height="12" rx="6"></rect>
+              <rect y="120" width="192" height="12" rx="6"></rect>
+              <rect y="150" width="132" height="12" rx="6"></rect>
+            </g>
+          </svg>
         </div>
       </div>
-      <div class="card">
-        <img src="project2.jpg" alt="Project 2">
-        <div class="card-text">
-          <h3>Project Two</h3>
-          <p>Interactive animations and AI-driven tools displayed with style.</p>
+    </section>
+
+    <section id="services" class="container services">
+      <h2 class="section-title">What we do</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Web Development</h3>
+          <p>Fast, responsive sites and web apps using modern stacks — clean code and SEO-friendly architecture.</p>
+        </article>
+        <article class="card">
+          <h3>Mobile Apps</h3>
+          <p>Native & cross-platform apps. Smooth UX and efficient performance for phones & tablets.</p>
+        </article>
+        <article class="card">
+          <h3>Game Design</h3>
+          <p>Prototype gameplay, levels, and monetization strategies — ready for stores and publishing.</p>
+        </article>
+        <article class="card">
+          <h3>Animations & Cartoons</h3>
+          <p>Character design, storyboarding and short animations for YouTube and marketing assets.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="container work">
+      <h2 class="section-title">Selected Work</h2>
+      <div class="grid-work">
+        <div class="work-card">
+          <div class="thumb" aria-hidden="true"></div>
+          <h4>Shopping Mall Runner (Game)</h4>
+          <p>Collect coins and upgrade your character in a 3D casual runner.</p>
+        </div>
+        <div class="work-card">
+          <div class="thumb" aria-hidden="true"></div>
+          <h4>AM Portfolio Site</h4>
+          <p>Responsive portfolio with animated sections and project filters.</p>
+        </div>
+        <div class="work-card">
+          <div class="thumb" aria-hidden="true"></div>
+          <h4>2D Cartoon Series</h4>
+          <p>Short animated episodes for kids with moral lessons and soft sound design.</p>
         </div>
       </div>
-      <div class="card">
-        <img src="ui.jpg" alt="Project 3">
-        <div class="card-text">
-          <h3>Project Three</h3>
-          <p>Portfolio websites and UI/UX designs with futuristic colors.</p>
+    </section>
+
+    <section id="about" class="container about">
+      <h2 class="section-title">About AM Studio</h2>
+      <p>AM Studio merges engineering with storytelling. We design interfaces, craft gameplay and deliver animation that connects. Whether a small freelance job or a product launch — we help you ship.</p>
+      <div class="about-grid">
+        <div>
+          <strong>Experience</strong>
+          <p>Over projects across web, mobile, and game development with a focus on clean deliverables.</p>
         </div>
+        <div>
+          <strong>Approach</strong>
+          <p>User-first design, iterative prototyping, and optimized production pipelines.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2 class="section-title">Get in touch</h2>
+      <p>Tell me about your project — even a short brief helps. I reply quickly.</p>
+
+      <!-- Simple contact form (non-functional static example) -->
+      <form class="contact-form" action="#" method="post" onsubmit="alert('This is a demo form. Replace action with your form endpoint.'); return false;">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <textarea name="message" placeholder="Short message / project brief" rows="5" required></textarea>
+        <div class="form-actions">
+          <button class="btn-primary" type="submit">Send Message</button>
+          <a class="btn-ghost" href="mailto:you@yourdomain.com">Email Directly</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> AM Studio — All rights reserved.</div>
+      <div class="socials">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
       </div>
     </div>
-  </section>
+  </footer>
 
-<!-- ================== CONTACT SECTION ================== -->
-<section id="contact" class="contact-section">
-  <h2>Contact Me</h2>
-
-  <!-- Contact Form -->
- <form id="contactForm" class="contact-form" action="https://formspree.io/f/mnnwjqpo" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
-
-<div id="formMessage" style="display:none; margin-top: 15px; font-weight: bold; color: #ffcccc; font-size: 16px;">
-  Thank you! Your message has been sent.
-</div>
-
-
-<script>
-  const form = document.getElementById('contactForm');
-  const messageDiv = document.getElementById('formMessage');
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent default form submission
-
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => {
-      if (response.ok) {
-        // Show our custom thank you message
-        messageDiv.textContent = "Thank you! Your message has been sent.";
-        messageDiv.style.display = 'block';
-        form.reset(); // Clear the form fields
-      } else {
-        // Show error alert
-        alert("Oops! There was a problem submitting your form.");
-      }
-    })
-    .catch(error => {
-      alert("Oops! There was a problem submitting your form.");
-    });
-  });
-</script>
-
-
-<footer>
-  <p>© 2025 Ammara Majeed | All Rights Reserved</p>
-  <div class="social-icons">
-    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-  </div>
-</footer>
-
-
-  <!-- ================== BACK TO TOP BUTTON ================== -->
-  <button id="backToTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">&#8679;</button>
-
-  <!-- ================== SCRIPTS ================== -->
   <script>
-    // Animate sections on scroll
-    const sections = document.querySelectorAll('section');
-    window.addEventListener('scroll', () => {
-      const scrollPos = window.scrollY + window.innerHeight - 100;
-      sections.forEach(sec => {
-        if(scrollPos > sec.offsetTop) sec.classList.add('visible');
+    // Small JS for year and smooth scroll
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
       });
     });
-
-    // Back to top button
-    const backBtn = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-      if(window.scrollY > 400) backBtn.style.display = 'block';
-      else backBtn.style.display = 'none';
-    });
-
-    // Mobile nav toggle
-    const toggle = document.querySelector('.nav-toggle');
-    const navButtons = document.querySelector('.nav-buttons');
-    toggle.addEventListener('click', () => {
-      navButtons.style.display = navButtons.style.display === 'flex' ? 'none' : 'flex';
-    });
   </script>
-<script>
-  const form = document.getElementById('contactForm');
-  const messageDiv = document.getElementById('formMessage');
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent default form submission
-
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        messageDiv.style.display = 'block'; // Show thank you message
-        form.reset(); // Clear the form fields
-      } else {
-        response.json().then(data => {
-          if (Object.hasOwn(data, 'errors')) {
-            alert(data["errors"].map(error => error["message"]).join(", "));
-          } else {
-            alert("Oops! There was a problem submitting your form.");
-          }
-        });
-      }
-    }).catch(error => {
-      alert("Oops! There was a problem submitting your form.");
-    });
-  });
-</script>
-
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
