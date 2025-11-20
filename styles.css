@@ -123,3 +123,9 @@ h1, h2, h3, h4 {
     flex-direction: column;
   }
 }
+.logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
