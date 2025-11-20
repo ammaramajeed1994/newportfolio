@@ -1,21 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services — AM Studio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
   <header class="site-header">
     <div class="container header-row">
-      <a class="logo" href="index.html">
-        <span class="brand-name">AM Studio</span>
-      </a>
+      <a href="index.html"><img src="logo.png" alt="AM Studio Logo" class="logo-img"></a>
       <nav class="nav">
         <a href="index.html">Home</a>
-        <a href="services.html" class="btn-outline">Services</a>
+        <a href="services.html">Services</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
@@ -23,44 +21,43 @@
     </div>
   </header>
 
-  <main class="container">
+  <section class="container">
     <h1>Our Services</h1>
     <div class="cards">
-      <article class="card">
+      <div class="card">
         <h3>Web Development</h3>
-        <p>Responsive websites, landing pages, dashboards, admin panels, and web apps.</p>
-      </article>
-      <article class="card">
+        <p>Responsive websites, landing pages, dashboards, and web apps with modern UI.</p>
+      </div>
+      <div class="card">
         <h3>Mobile App Development</h3>
-        <p>Cross-platform Android/iOS apps with beautiful UI and smooth performance.</p>
-      </article>
-      <article class="card">
+        <p>Cross-platform Android/iOS apps with smooth performance and appealing design.</p>
+      </div>
+      <div class="card">
         <h3>Game Development</h3>
-        <p>2D/3D game prototypes, gameplay mechanics, and interactive environments.</p>
-      </article>
-      <article class="card">
+        <p>2D/3D interactive games for all platforms, including web and mobile.</p>
+      </div>
+      <div class="card">
         <h3>3D Animation & Cartoons</h3>
-        <p>Storytelling, character animations, and YouTube-ready animated videos.</p>
-      </article>
-      <article class="card">
+        <p>Animated videos, cartoons, and explainer videos with high-quality graphics.</p>
+      </div>
+      <div class="card">
         <h3>Video Editing</h3>
-        <p>Promotional videos, motion graphics, and content for social media or marketing.</p>
-      </article>
-      <article class="card">
+        <p>Professional video editing, motion graphics, and post-production services.</p>
+      </div>
+      <div class="card">
         <h3>UI/UX Design</h3>
-        <p>User-first interface design, prototyping, and optimized experience for apps and games.</p>
-      </article>
+        <p>User-friendly interfaces and experiences for web, mobile, and games.</p>
+      </div>
     </div>
-  </main>
+  </section>
 
   <footer class="site-footer">
-    <div class="container footer-row">
-      <div>© <span id="year"></span> AM Studio</div>
-    </div>
+    <div class="container footer-row">© <span id="year"></span> AM Studio</div>
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
