@@ -27,20 +27,37 @@
       </nav>
     </div>
   </header>
-
- <section id="contact" class="contact-section">
-  <div class="container">
+<section id="contact" class="contact-section">
+  <div class="container contact-container">
     <h2>Contact Me</h2>
-    <p>Feel free to get in touch using the form below.</p>
-    
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <p>Feel free to get in touch using the form below or via social links.</p>
+
+    <div class="contact-grid">
+      <!-- Contact Form Card -->
+      <div class="contact-card">
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info / Social Links -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>Email: <a href="mailto:hello@amstudio.com">hello@amstudio.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        <div class="social-links">
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">Twitter</a>
+          <a href="#" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-row">© <span id="year"></span> AM Studio</div>
