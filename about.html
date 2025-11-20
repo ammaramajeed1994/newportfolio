@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — AM Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="index.html">
+        <span class="brand-name">AM Studio</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html" class="btn-outline">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">About AM Studio</h1>
+    <p>
+      AM Studio is a multimedia development studio providing services in
+      <strong>Web Development, Mobile App Development, Game Design, Animation, and Cartoon Production.</strong>
+    </p>
+
+    <h2 class="section-title">Our Mission</h2>
+    <p>
+      Our goal is to build stunning digital experiences that blend creativity with technology.
+      We create projects that are visually appealing, user-friendly, and built with clean code.
+    </p>
+
+    <h2 class="section-title">Why Choose Us</h2>
+    <ul class="quick-list">
+      <li>Clean UI/UX Design</li>
+      <li>Professional Code Quality</li>
+      <li>Fast Delivery</li>
+      <li>Mobile Friendly Work</li>
+      <li>Game & Animation Expertise</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> AM Studio</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
