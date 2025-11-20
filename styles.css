@@ -359,7 +359,7 @@ body {
 }
 
 .contact-form button:hover {
-  background-color: #520f8b; /* Darker shade on hover */
+  background-color: black; /* Darker shade on hover */
   transform: translateY(-2px);
 }
 
@@ -377,4 +377,5 @@ body {
   background-color: #520f8b; /* Darker on hover */
   transform: translateY(-2px);
 }
+
 
