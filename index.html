@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AM Studio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container">
+            <h1 class="logo">AM Studio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header>
-  <h1>AM Studio</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="work.html">Work</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to AM Studio</h2>
+            <p>Creative solutions for web, graphics, and software projects</p>
+            <a href="projects.html" class="btn">View Work</a>
+        </div>
+    </section>
 
-<section class="hero">
-  <h2>Creative Solutions for Modern Web & Apps</h2>
-  <p>Web Development | Game Design | Animation | AI Projects</p>
-  <a href="contact.html" class="btn">Get in Touch</a>
-</section>
+    <!-- About Preview Section -->
+    <section class="about-preview">
+        <div class="container grid">
+            <div>
+                <h2>About Me</h2>
+                <p>I am a professional web developer and designer, specializing in modern, responsive websites and creative designs. I deliver clean code and unique solutions.</p>
+                <a href="about.html" class="btn">Read More</a>
+            </div>
+            <div>
+                <img src="images/about.jpg" alt="About AM Studio">
+            </div>
+        </div>
+    </section>
 
-<section id="work">
-  <h2>My Work</h2>
-  <div class="work-grid">
-    <div class="work-card">
-      <img src="images/project1.jpg" alt="Project 1">
-      <div class="overlay">
-        <h3>Web Development</h3>
-        <p>Responsive websites built with HTML, CSS, JS.</p>
-        <a href="#" class="btn">View Project</a>
-      </div>
-    </div>
-    <div class="work-card">
-      <img src="images/project2.jpg" alt="Project 2">
-      <div class="overlay">
-        <h3>Game Design</h3>
-        <p>Interactive 2D & 3D games built with Unity.</p>
-        <a href="#" class="btn">View Project</a>
-      </div>
-    </div>
-    <div class="work-card">
-      <img src="images/project3.jpg" alt="Project 3">
-      <div class="overlay">
-        <h3>AI & ML Projects</h3>
-        <p>Machine learning solutions for real-world problems.</p>
-        <a href="#" class="btn">View Project</a>
-      </div>
-    </div>
-    <div class="work-card">
-      <img src="images/project4.jpg" alt="Project 4">
-      <div class="overlay">
-        <h3>Animation & Cartoons</h3>
-        <p>Creative animated stories and YouTube videos.</p>
-        <a href="#" class="btn">View Project</a>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Projects Preview -->
+    <section class="projects-preview">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="grid">
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                </div>
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                </div>
+                <div class="project-card">
+                    <img src="images/project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                </div>
+            </div>
+            <a href="projects.html" class="btn">See All Projects</a>
+        </div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 AM Studio. All rights reserved.</p>
-</footer>
-
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AM Studio. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
-
