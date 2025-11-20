@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services — AM Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="index.html">
+        <span class="brand-name">AM Studio</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="btn-outline">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">Our Services</h1>
+    <div class="cards">
+      <article class="card">
+        <h3>Web Development</h3>
+        <p>Modern websites, landing pages, dashboards, admin panels and web apps.</p>
+      </article>
+
+      <article class="card">
+        <h3>Mobile Apps</h3>
+        <p>Cross-platform Android & iOS apps with beautiful UI and fast performance.</p>
+      </article>
+
+      <article class="card">
+        <h3>Game Development</h3>
+        <p>2D/3D game prototypes, gameplay mechanics, UI, character design.</p>
+      </article>
+
+      <article class="card">
+        <h3>Animation & Cartoons</h3>
+        <p>Short animated stories, character animation, YouTube kids content.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> AM Studio</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
