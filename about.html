@@ -3,45 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — AmmaraMajeed Studio</title>
+  <title>About — AM Studio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container header-row">
-    <div class="branding">
-      <div class="logo-circle">AMs</div>
-      <div class="brand-text">
-        <h1 class="brand-title">AmmaraMajeed Studio</h1>
-        <p class="brand-subtitle">Web • Mobile • Game • Animation</p>
-      </div>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a href="index.html" class="logo-box">
+        <img src="logo.png" alt="AM Studio Logo" class="logo-img">
+        <div class="logo-text">
+          <h1 class="logo-main">AMs</h1>
+          <p class="logo-sub">Ammara Majeed Studio</p>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+  <!-- ABOUT PAGE -->
+  <section class="home-about container">
+    <h2>About AM Studio</h2>
+    <p>AM Studio is a full-service creative studio founded by Ammara Majeed. We specialize in web development, mobile applications, game design, 3D animation, video editing, and UI/UX design. Our mission is to deliver innovative, high-quality digital solutions that help clients achieve their goals.</p>
+    <p>With a strong focus on creativity, professionalism, and user experience, AM Studio has completed projects for clients worldwide, turning ideas into visually stunning and functional products.</p>
+  </section>
 
-<section class="page container">
-  <h2>About Us</h2>
-  <p>AmmaraMajeed Studio is a creative digital studio offering complete services in:</p>
-  <ul>
-    <li>Web Development</li>
-    <li>Mobile Application Development</li>
-    <li>Game Development</li>
-    <li>3D Animation & Cartoons</li>
-    <li>Video Editing</li>
-    <li>UI/UX Design</li>
-  </ul>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-row">© <span id="year"></span> AM Studio</div>
+  </footer>
 
-  <p>We aim to deliver high-quality work tailored to clients worldwide.</p>
-</section>
-
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
