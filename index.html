@@ -11,12 +11,9 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header-row">
-      <a class="logo" href="index.html">
-        <img src="logo.png" alt="AM Studio Logo" class="logo-img">
-      </a>
-
+      <a href="index.html"><img src="logo.png" alt="AM Studio Logo" class="logo-img"></a>
       <nav class="nav">
-        <a href="index.html" class="btn-outline">Home</a>
+        <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="about.html">About</a>
@@ -25,7 +22,7 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <main class="hero-container">
     <div class="hero-content">
       <h1>Welcome to AM Studio</h1>
@@ -34,7 +31,7 @@
     </div>
   </main>
 
-  <!-- ABOUT / INTRO PREVIEW -->
+  <!-- ABOUT PREVIEW -->
   <section class="home-about container">
     <h2>About AM Studio</h2>
     <p>AM Studio is a full-service creative studio offering web development, mobile apps, game development, 3D animation, video editing, and UI/UX design. We focus on delivering professional, visually appealing, and user-friendly digital solutions for all your needs.</p>
@@ -44,18 +41,12 @@
   <section class="home-services container">
     <h2>Our Services</h2>
     <div class="cards">
-      <article class="card">
-        <h3>Web Development</h3>
-        <p>Responsive websites, landing pages, dashboards, and web apps.</p>
-      </article>
-      <article class="card">
-        <h3>Mobile Apps</h3>
-        <p>Cross-platform Android/iOS apps with modern UI and smooth performance.</p>
-      </article>
-      <article class="card">
-        <h3>Game Development</h3>
-        <p>2D/3D games with interactive environments and gameplay mechanics.</p>
-      </article>
+      <div class="card"><h3>Web Development</h3></div>
+      <div class="card"><h3>Mobile Apps</h3></div>
+      <div class="card"><h3>Game Development</h3></div>
+      <div class="card"><h3>3D Animation</h3></div>
+      <div class="card"><h3>Video Editing</h3></div>
+      <div class="card"><h3>UI/UX Design</h3></div>
     </div>
     <a href="services.html" class="btn-primary">View All Services</a>
   </section>
@@ -64,18 +55,9 @@
   <section class="home-portfolio container">
     <h2>Our Portfolio</h2>
     <div class="grid-work">
-      <div class="work-card">
-        <div class="thumb"></div>
-        <h4>Shopping Mall Runner Game</h4>
-      </div>
-      <div class="work-card">
-        <div class="thumb"></div>
-        <h4>Portfolio Website</h4>
-      </div>
-      <div class="work-card">
-        <div class="thumb"></div>
-        <h4>Kids Cartoon Series</h4>
-      </div>
+      <div class="work-card"><div class="thumb"></div><h4>Shopping Mall Game</h4></div>
+      <div class="work-card"><div class="thumb"></div><h4>Portfolio Website</h4></div>
+      <div class="work-card"><div class="thumb"></div><h4>Kids Cartoon Series</h4></div>
     </div>
     <a href="portfolio.html" class="btn-primary">View Full Portfolio</a>
   </section>
@@ -88,9 +70,7 @@
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-row">
-      <div>© <span id="year"></span> AM Studio</div>
-    </div>
+    <div class="container footer-row">© <span id="year"></span> AM Studio</div>
   </footer>
 
   <script>
