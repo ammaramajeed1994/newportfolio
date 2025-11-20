@@ -3,45 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — AM Studio</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>About - AM Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-row">
-      <a href="index.html" class="logo-box">
-        <img src="logo.png" alt="AM Studio Logo" class="logo-img">
-        <div class="logo-text">
-          <h1 class="logo-main">AMs</h1>
-          <p class="logo-sub">Ammara Majeed Studio</p>
-        </div>
-      </a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+<header>
+  <h1>AM Studio</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Work</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about">
+    <img src="images/about.jpg" alt="About Image">
+    <div class="content">
+      <p>Hello! I’m Ammara Majeed, a creative web and game developer with experience in AI, animation, and interactive design. I specialize in creating professional, modern websites and digital experiences that stand out and perform flawlessly.</p>
+      <a href="contact.html" class="btn">Hire Me</a>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- ABOUT PAGE -->
-  <section class="home-about container">
-    <h2>About AM Studio</h2>
-    <p>AM Studio is a full-service creative studio founded by Ammara Majeed. We specialize in web development, mobile applications, game design, 3D animation, video editing, and UI/UX design. Our mission is to deliver innovative, high-quality digital solutions that help clients achieve their goals.</p>
-    <p>With a strong focus on creativity, professionalism, and user experience, AM Studio has completed projects for clients worldwide, turning ideas into visually stunning and functional products.</p>
-  </section>
+<footer>
+  <p>&copy; 2025 AM Studio. All rights reserved.</p>
+</footer>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-row">© <span id="year"></span> AM Studio</div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
