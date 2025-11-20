@@ -2,190 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AM Studio — Web, Mobile, Game & Animation</title>
-  <meta name="description" content="AM Studio — Web, Mobile, Game & Animation — All in One Studio" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home — AM Studio</title>
   <link rel="stylesheet" href="styles.css" />
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- Theme color for mobile -->
-  <meta name="theme-color" content="#0957ff">
 </head>
-<body>
 
+<body>
   <header class="site-header">
     <div class="container header-row">
-      <a class="logo" href="#home" aria-label="AM Studio home">
-        <!-- Inline minimal modern SVG logo -->
-        <svg width="56" height="56" viewBox="0 0 100 100" aria-hidden="true" role="img">
-          <defs>
-            <linearGradient id="g1" x1="0%" x2="100%">
-              <stop offset="0" stop-color="#0957FF"/>
-              <stop offset="1" stop-color="#6D5CFF"/>
-            </linearGradient>
-          </defs>
-          <rect rx="18" width="100" height="100" fill="url(#g1)"></rect>
-          <g transform="translate(18,20)" fill="#fff" stroke="none">
-            <!-- A shape -->
-            <path d="M6 60 L24 6 L42 60 L34 60 L26 36 L14 36 L6 60 Z"></path>
-            <!-- M shape -->
-            <path d="M52 60 L52 10 L66 34 L78 10 L78 60 L70 60 L70 18 L66 26 L58 18 L58 60 Z"></path>
-          </g>
-        </svg>
-        <div class="brand">
-          <span class="brand-name">AM Studio</span>
-          <span class="tagline">Web, Mobile, Game & Animation — All in One Studio</span>
-        </div>
+      <a class="logo" href="index.html">
+        <span class="brand-name">AM Studio</span>
       </a>
-
       <nav class="nav">
-        <a href="#services">Services</a>
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="btn-outline">Contact</a>
+        <a href="index.html" class="btn-outline">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main id="home">
-    <section class="hero container">
-      <div class="hero-left">
-        <h1>We build beautiful web, mobile, games & animations.</h1>
-        <p class="lead">From concept to launch — clean UI, performant code, and playful animations that users love.</p>
-        <div class="hero-cta">
-          <a href="#contact" class="btn-primary">Start a Project</a>
-          <a href="#work" class="btn-ghost">See Portfolio</a>
-        </div>
-
-        <ul class="quick-list">
-          <li>Web apps & Landing pages</li>
-          <li>Mobile apps (iOS & Android)</li>
-          <li>2D/3D Game prototypes</li>
-          <li>Animations & Cartoon shorts</li>
-        </ul>
-      </div>
-
-      <div class="hero-right">
-        <!-- simple device mockup with SVG / gradient -->
-        <div class="mockup">
-          <svg viewBox="0 0 320 540" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-            <defs>
-              <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#0957FF"/>
-                <stop offset="1" stop-color="#6D5CFF"/>
-              </linearGradient>
-            </defs>
-            <rect x="10" y="10" rx="28" ry="28" width="300" height="520" fill="#0f1724" />
-            <rect x="24" y="36" rx="14" ry="14" width="272" height="440" fill="url(#mg)"/>
-            <g transform="translate(40,64)" fill="#fff" opacity="0.95">
-              <rect width="192" height="56" rx="10"></rect>
-              <rect y="90" width="192" height="12" rx="6"></rect>
-              <rect y="120" width="192" height="12" rx="6"></rect>
-              <rect y="150" width="132" height="12" rx="6"></rect>
-            </g>
-          </svg>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="container services">
-      <h2 class="section-title">What we do</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Web Development</h3>
-          <p>Fast, responsive sites and web apps using modern stacks — clean code and SEO-friendly architecture.</p>
-        </article>
-        <article class="card">
-          <h3>Mobile Apps</h3>
-          <p>Native & cross-platform apps. Smooth UX and efficient performance for phones & tablets.</p>
-        </article>
-        <article class="card">
-          <h3>Game Design</h3>
-          <p>Prototype gameplay, levels, and monetization strategies — ready for stores and publishing.</p>
-        </article>
-        <article class="card">
-          <h3>Animations & Cartoons</h3>
-          <p>Character design, storyboarding and short animations for YouTube and marketing assets.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="work" class="container work">
-      <h2 class="section-title">Selected Work</h2>
-      <div class="grid-work">
-        <div class="work-card">
-          <div class="thumb" aria-hidden="true"></div>
-          <h4>Shopping Mall Runner (Game)</h4>
-          <p>Collect coins and upgrade your character in a 3D casual runner.</p>
-        </div>
-        <div class="work-card">
-          <div class="thumb" aria-hidden="true"></div>
-          <h4>AM Portfolio Site</h4>
-          <p>Responsive portfolio with animated sections and project filters.</p>
-        </div>
-        <div class="work-card">
-          <div class="thumb" aria-hidden="true"></div>
-          <h4>2D Cartoon Series</h4>
-          <p>Short animated episodes for kids with moral lessons and soft sound design.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="container about">
-      <h2 class="section-title">About AM Studio</h2>
-      <p>AM Studio merges engineering with storytelling. We design interfaces, craft gameplay and deliver animation that connects. Whether a small freelance job or a product launch — we help you ship.</p>
-      <div class="about-grid">
-        <div>
-          <strong>Experience</strong>
-          <p>Over projects across web, mobile, and game development with a focus on clean deliverables.</p>
-        </div>
-        <div>
-          <strong>Approach</strong>
-          <p>User-first design, iterative prototyping, and optimized production pipelines.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="container contact">
-      <h2 class="section-title">Get in touch</h2>
-      <p>Tell me about your project — even a short brief helps. I reply quickly.</p>
-
-      <!-- Simple contact form (non-functional static example) -->
-      <form class="contact-form" action="#" method="post" onsubmit="alert('This is a demo form. Replace action with your form endpoint.'); return false;">
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Your name" required>
-          <input type="email" name="email" placeholder="Email" required>
-        </div>
-        <textarea name="message" placeholder="Short message / project brief" rows="5" required></textarea>
-        <div class="form-actions">
-          <button class="btn-primary" type="submit">Send Message</button>
-          <a class="btn-ghost" href="mailto:you@yourdomain.com">Email Directly</a>
-        </div>
-      </form>
-    </section>
+  <main class="container">
+    <h1>Welcome to AM Studio</h1>
+    <p>Your one-stop studio for <strong>Web, Mobile, Game & Animation</strong> projects.</p>
+    <p>Explore our services, portfolio, and get in touch with us!</p>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-row">
-      <div>© <span id="year"></span> AM Studio — All rights reserved.</div>
-      <div class="socials">
-        <a href="#" aria-label="Twitter">Twitter</a>
-        <a href="#" aria-label="GitHub">GitHub</a>
-        <a href="#" aria-label="YouTube">YouTube</a>
-      </div>
+      <div>© <span id="year"></span> AM Studio</div>
     </div>
   </footer>
 
   <script>
-    // Small JS for year and smooth scroll
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', e=>{
-        e.preventDefault();
-        const target = document.querySelector(a.getAttribute('href'));
-        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
-      });
-    });
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
