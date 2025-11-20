@@ -3,55 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AM Studio — Creative Portfolio of Ammara Majeed</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>AM Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Header -->
-<header class="site-header">
-  <a href="index.html" class="logo-box">
-    <img src="logo.png" alt="AM Studio Logo" class="logo-img">
-    <div class="logo-text">
-      <h1>AMs</h1>
-      <p>Ammara Majeed Studio</p>
-    </div>
-  </a>
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <header>
+    <h1>AM Studio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>Welcome to AM Studio</h1>
-    <p>Your creative digital portfolio</p>
-    <a href="services.html" class="hero-btn">Services</a>
-  </div>
-</section>
+  <section class="hero" style="background: url('images/hero-bg.jpg') center/cover no-repeat;">
+    <h2>Creative Solutions for Modern Web & Apps</h2>
+    <p>Web Development | Game Design | Animation | AI Projects</p>
+    <a href="contact.html" class="btn">Get in Touch</a>
+  </section>
 
-<!-- About Preview -->
-<section id="about">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>Professional web and UI/UX designer with passion for creative solutions.</p>
-    <a href="about.html" class="button">Read More</a>
-  </div>
-</section>
+  <footer>
+    <p>&copy; 2025 AM Studio. All rights reserved.</p>
+  </footer>
 
-<!-- Footer -->
-<footer class="site-footer">
-  © <span id="year"></span> AM Studio
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
-
