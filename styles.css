@@ -46,16 +46,16 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    background: url('../images/hero.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 100px 0;
 }
-.hero h2 {
+.hero-text h2 {
     font-size: 48px;
     margin-bottom: 20px;
 }
-.hero p {
+.hero-text p {
     font-size: 20px;
     margin-bottom: 30px;
 }
@@ -125,4 +125,17 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
+}
+
+/* Responsive Fix */
+@media(max-width:768px){
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
