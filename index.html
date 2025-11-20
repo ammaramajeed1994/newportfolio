@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home — AM Studio</title>
+  <title>Home — AmmaraMajeed Studio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,7 +11,17 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header-row">
-      <a href="index.html"><img src="logo.png" alt="AM Studio Logo" class="logo-img"></a>
+
+      <!-- LOGO + COMPANY NAME -->
+      <div class="branding">
+        <div class="logo-circle">AMs</div>
+        <div class="brand-text">
+          <h1 class="brand-title">AmmaraMajeed Studio</h1>
+          <p class="brand-subtitle">Web • Mobile • Game • Animation</p>
+        </div>
+      </div>
+
+      <!-- NAV -->
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
@@ -22,26 +32,25 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero-container">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <img src="logo.png" alt="AM Studio Logo" class="hero-logo">
-      <h1>Welcome to AM Studio</h1>
-      <p>We specialize in <strong>Web, Mobile, Game & Animation</strong> projects.</p>
+      <h1>Welcome to AmmaraMajeed Studio</h1>
+      <p>Your one-stop studio for Web, Mobile Apps, Games, Animation & Creative Designs.</p>
       <a href="services.html" class="btn-primary">Explore Services</a>
     </div>
   </section>
 
   <!-- ABOUT PREVIEW -->
   <section class="home-about container">
-    <h2>About AM Studio</h2>
-    <p>AM Studio is a full-service creative studio offering web development, mobile apps, game development, 3D animation, video editing, and UI/UX design. We focus on delivering professional, visually appealing, and user-friendly digital solutions for all your needs.</p>
+    <h2>Who We Are</h2>
+    <p>We deliver professional digital services including websites, mobile applications, 3D animation, game development, UI/UX design, and video editing.</p>
   </section>
 
   <!-- SERVICES PREVIEW -->
   <section class="home-services container">
-    <h2>Our Services</h2>
+    <h2>Our Expertise</h2>
     <div class="cards">
       <div class="card"><h3>Web Development</h3></div>
       <div class="card"><h3>Mobile Apps</h3></div>
@@ -53,31 +62,14 @@
     <a href="services.html" class="btn-primary">View All Services</a>
   </section>
 
-  <!-- PORTFOLIO PREVIEW -->
-  <section class="home-portfolio container">
-    <h2>Our Portfolio</h2>
-    <div class="grid-work">
-      <div class="work-card"><div class="thumb" style="background-image:url('images/portfolio1.jpg')"></div><h4>Shopping Mall Game</h4></div>
-      <div class="work-card"><div class="thumb" style="background-image:url('images/portfolio2.jpg')"></div><h4>Portfolio Website</h4></div>
-      <div class="work-card"><div class="thumb" style="background-image:url('images/portfolio3.jpg')"></div><h4>Kids Cartoon Series</h4></div>
-    </div>
-    <a href="portfolio.html" class="btn-primary">View Full Portfolio</a>
-  </section>
-
-  <!-- CONTACT PREVIEW -->
-  <section class="home-contact container">
-    <h2>Get in Touch</h2>
-    <p>Have a project or idea? <a href="contact.html" class="btn-primary">Contact Us</a> today!</p>
-  </section>
-
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-row">© <span id="year"></span> AM Studio</div>
+    <div class="container footer-row">© <span id="year"></span> AmmaraMajeed Studio</div>
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
-
