@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — AM Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="index.html">
+        <span class="brand-name">AM Studio</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" class="btn-outline">Portfolio</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">Our Portfolio</h1>
+
+    <div class="grid-work">
+      <div class="work-card">
+        <div class="thumb"></div>
+        <h4>Shopping Mall Runner Game</h4>
+        <p>3D environment, coin collection, levels, shop system.</p>
+      </div>
+
+      <div class="work-card">
+        <div class="thumb"></div>
+        <h4>Portfolio Website</h4>
+        <p>Fully responsive website with animations and smooth UI.</p>
+      </div>
+
+      <div class="work-card">
+        <div class="thumb"></div>
+        <h4>Kids Animation Series</h4>
+        <p>Storytelling, character animation, YouTube-ready videos.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> AM Studio</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
