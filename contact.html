@@ -3,68 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — AM Studio</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Contact - AM Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-row">
-      <a href="index.html" class="logo-box">
-        <img src="logo.png" alt="AM Studio Logo" class="logo-img">
-        <div class="logo-text">
-          <h1 class="logo-main">AMs</h1>
-          <p class="logo-sub">Ammara Majeed Studio</p>
-        </div>
-      </a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-<section id="contact" class="contact-section">
-  <div class="container contact-container">
-    <h2>Contact Me</h2>
-    <p>Feel free to get in touch using the form below or via social links.</p>
+<header>
+  <h1>AM Studio</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Work</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-    <div class="contact-grid">
-      <!-- Contact Form Card -->
-      <div class="contact-card">
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-
-      <!-- Contact Info / Social Links -->
-      <div class="contact-info">
-        <h3>Get in Touch</h3>
-        <p>Email: <a href="mailto:hello@amstudio.com">hello@amstudio.com</a></p>
-        <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
-        <div class="social-links">
-          <a href="#" target="_blank">LinkedIn</a>
-          <a href="#" target="_blank">Twitter</a>
-          <a href="#" target="_blank">Instagram</a>
-        </div>
-      </div>
-    </div>
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p style="text-align:center; margin-bottom: 30px;">Reach out for projects, collaborations, or freelance work.</p>
+  <div style="display:flex; justify-content:center;">
+    <a href="mailto:example@gmail.com" class="btn">Email Me</a>
   </div>
 </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-row">© <span id="year"></span> AM Studio</div>
-  </footer>
+<footer>
+  <p>&copy; 2025 AM Studio. All rights reserved.</p>
+</footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
