@@ -25,3 +25,33 @@ function revealCards() {
 
 window.addEventListener('scroll', revealCards);
 window.addEventListener('load', revealCards);
+<script>
+const form = document.getElementById('contact-form');
+const successMsg = document.getElementById('form-success');
+const errorMsg = document.getElementById('form-error');
+
+form.addEventListener('submit', async function(e) {
+  e.preventDefault(); // prevent default form submit
+  
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      successMsg.style.display = 'block';
+      errorMsg.style.display = 'none';
+      form.reset();
+    } else {
+      throw new Error('Network response was not ok.');
+    }
+  } catch (error) {
+    errorMsg.style.display = 'block';
+    successMsg.style.display = 'none';
+  }
+});
+</script>
