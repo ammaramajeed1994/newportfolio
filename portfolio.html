@@ -3,51 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio — AM Studio</title>
+  <title>AM Studio | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header>
+    <div class="container header-flex">
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-row">
-      <a href="index.html" class="logo-box">
-        <img src="logo.png" alt="AM Studio Logo" class="logo-img">
-        <div class="logo-text">
-          <h1 class="logo-main">AMs</h1>
-          <p class="logo-sub">Ammara Majeed Studio</p>
+        <!-- Logo + Brand Name -->
+        <div class="logo-area">
+            <img src="logo.png" alt="AM Studio" class="logo-img">
+            <span class="brand-name">AmmaraMadni Studio</span>
         </div>
-      </a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+
+        <!-- Desktop Menu -->
+        <nav class="header-right">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
     </div>
-  </header>
+</header>
 
-  <!-- PORTFOLIO PAGE -->
-  <section class="home-portfolio container">
-    <h2>Our Portfolio</h2>
-    <div class="grid-work">
-      <div class="work-card"><div class="thumb"></div><h4>Shopping Mall Game</h4></div>
-      <div class="work-card"><div class="thumb"></div><h4>Portfolio Website</h4></div>
-      <div class="work-card"><div class="thumb"></div><h4>Kids Cartoon Series</h4></div>
-      <div class="work-card"><div class="thumb"></div><h4>3D Animation Promo</h4></div>
-      <div class="work-card"><div class="thumb"></div><h4>Mobile App Project</h4></div>
-      <div class="work-card"><div class="thumb"></div><h4>UI/UX Case Study</h4></div>
+
+
+
+
+<section class="projects-preview">
+  <div class="container">
+    <h2>My Projects</h2>
+    <div class="grid">
+      <div class="project-card"><img src="project1.jpg" alt="Project 1"><h3>Website Design</h3></div>
+      <div class="project-card"><img src="project5.jpg" alt="Project 2"><h3>Mobile App</h3></div>
+      <div class="project-card"><img src="project4.jpg" alt="Project 3"><h3>Game Development</h3></div>
+      <div class="project-card"><img src="project2.jpg" alt="Project 4"><h3>Animation Project</h3></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-row">© <span id="year"></span> AM Studio</div>
-  </footer>
+<footer>
+  <p>© 2025 AM Studio | All Rights Reserved</p>
+</footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

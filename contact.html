@@ -1,35 +1,81 @@
+<!-- Contact Page (contact.html) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - AM Studio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AM Studio | Contact</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-  <h1>AM Studio</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Work</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <div class="container header-flex">
+
+        <!-- Logo + Brand Name -->
+        <div class="logo-area">
+            <img src="logo.png" alt="AM Studio" class="logo-img">
+            <span class="brand-name">AmmaraMadni Studio</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="header-right">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
 </header>
 
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p style="text-align:center; margin-bottom: 30px;">Reach out for projects, collaborations, or freelance work.</p>
-  <div style="display:flex; justify-content:center;">
-    <a href="mailto:example@gmail.com" class="btn">Email Me</a>
-  </div>
+
+
+
+
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+        <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+        <li><a href="portfolio.html" onclick="toggleMenu()">Portfolio</a></li>
+        <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+</div>
+
+
+
+<section class="contact">
+<div class="container">
+<h2>Contact Me</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="6" placeholder="Your Message" required></textarea>
+<button type="submit" class="btn-primary">Send Message</button>
+</form>
+<div class="contact-social">
+<h3>Connect with me</h3>
+<div class="social-icons">
+<a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+<a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+<a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+</div>
+</div>
+</div>
 </section>
 
+
 <footer>
-  <p>&copy; 2025 AM Studio. All rights reserved.</p>
+<p>© 2025 AM Studio | All Rights Reserved</p>
 </footer>
+
 
 </body>
 </html>
