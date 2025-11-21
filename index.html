@@ -1,39 +1,90 @@
-<!-- index.html -->
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.</p>
-<p>More details about skills or experience can be added here.</p>
+<!-- Professional index.html for AM Studio -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AM Studio | Home</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="container header-flex">
+
+        <!-- Logo + Brand Name -->
+        <div class="logo-area">
+            <img src="logo.png" alt="AM Studio" class="logo-img">
+            <span class="brand-name">AmmaraMadni Studio</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="header-right">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+     
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+        <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+        <li><a href="portfolio.html" onclick="toggleMenu()">Portfolio</a></li>
+        <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+    </ul>
 </div>
-</div>
+
+<!-- Hero Section -->
+<section class="hero">
+<div class="hero-overlay"></div>
+<div class="hero-text">
+<h1>Transforming Ideas Into Digital Experiences</h1>
+<p>Web Development · App Development · Animation · Game Development · UI/UX Design</p>
+<a href="portfolio.html" class="btn btn-primary">Explore My Work</a>
 </div>
 </section>
 
 
-<!-- Projects Section -->
-<section class="projects-preview" id="projects">
+<!-- About Impression Section -->
+<section class="home-about">
 <div class="container">
-<h2>My Projects</h2>
-<div class="grid">
-<div class="project-card">
-<img src="images/project1.jpg" alt="Project 1">
-<h3>Project One</h3>
-</div>
-<div class="project-card">
-<img src="images/project2.jpg" alt="Project 2">
-<h3>Project Two</h3>
-</div>
-<div class="project-card">
-<img src="images/project3.jpg" alt="Project 3">
-<h3>Project Three</h3>
-</div>
+<div class="about-impression">
+<h2>Welcome to AM Studio</h2>
+<p>We craft innovative digital solutions that attract, engage, and inspire. From websites to mobile apps, games, and animations, our work blends creativity with functionality to deliver exceptional experiences for your business.</p>
+<a href="about.html" class="btn btn-secondary">Learn More About Me</a>
 </div>
 </div>
 </section>
 
 
-<!-- Footer -->
+<!-- Call to Action Section -->
+<section class="home-cta">
+<div class="container cta-flex">
+<h2>Ready to elevate your business?</h2>
+<a href="contact.html" class="btn btn-primary">Get in Touch</a>
+</div>
+</section>
+
+
 <footer>
 <p>© 2025 AM Studio | All Rights Reserved</p>
 </footer>
-
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
